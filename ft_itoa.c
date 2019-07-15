@@ -6,47 +6,45 @@
 /*   By: htynisha <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/08 18:43:48 by htynisha          #+#    #+#             */
-/*   Updated: 2019/07/11 20:34:21 by htynisha         ###   ########.fr       */
+/*   Updated: 2019/07/15 20:30:12 by htynisha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+static int	ft_negativ(long lng)
+{
+	if (n < 0)
+		return (1);
+	return (0);
+}
+
 char	*ft_itoa(int n)
 {
-	long	l;
-	long	lbuf;
-	int		ng;
-	int		i;
-	char	*str;
+	long lng;
+	long lng2;
+	char *str;
+	int ng;
+	int i;
 
-	l = n;
-	lbuf = ln;
+	lng = n;
 	ng = 0;
 	i = 0;
-	if (l < 0)
+	if (ft_negativ(lng))
 	{
 		ng = 1;
-		l *= -1;
+		lng *= -1;
 	}
-	while (l)
+	lng2 = lng;
+	while (lng2 >= 10)
 	{
-		l /= 10;
 		i++;
+		lng2 /= 10;
 	}
-	l = lbuf;
 	if (ng)
-	{
-		str = ft_strnew(i + 1);
-		str[0] = '-';
-	}
+		ft_strnew(i + 1);
 	else
-		str = ft_strnew(i);
-	i--;
-	while (l > 0 && i >= 0)
-	{
-		str[i] = (char)(l % 10) + '0';
-		i--;
-	}
+		ft_strnew(i);
+
 	return (str);
 }
