@@ -1,30 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   main2.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: htynisha <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/30 11:28:57 by htynisha          #+#    #+#             */
-/*   Updated: 2019/08/12 11:13:25 by htynisha         ###   ########.fr       */
+/*   Created: 2019/08/12 11:14:20 by htynisha          #+#    #+#             */
+/*   Updated: 2019/08/12 11:32:54 by htynisha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdio.h>
 
-int	main(void)
+int main(void)
 {
+	long nn;
 	int n;
-	int m;
 
-	n = 27;
-	m = -59485;
-	ft_putendl("Hello");
-	ft_putstr("world_____");
-	ft_putnbr(n);
-	ft_putchar('\n');
-	ft_putnbr(m);
-	ft_putchar('\n');
-	ft_putstr(ft_itoa(n));
+	nn = 30000000000;
+	n = sizeof(nn);
+	printf("%d", n);
 	return (0);
 }
