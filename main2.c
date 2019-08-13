@@ -6,16 +6,16 @@
 /*   By: htynisha <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/12 11:14:20 by htynisha          #+#    #+#             */
-/*   Updated: 2019/08/12 11:32:54 by htynisha         ###   ########.fr       */
+/*   Updated: 2019/08/13 19:42:50 by htynisha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int main(void)
+int	main(void)
 {
-	long nn;
-	int n;
+	long	nn;
+	int		n;
 
 	nn = 30000000000;
 	n = sizeof(nn);
